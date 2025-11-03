@@ -261,57 +261,52 @@ section {
   gap: 1rem;
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION (FIXED AND RESPONSIVE) */
 
 #about {
   position: relative;
+  min-height: fit-content; /* ensures section grows with content */
+  padding-bottom: 5rem; /* adds breathing space */
 }
 
 .about-containers {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap; /* ✅ allows wrapping */
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .about-details-container {
+  display: flex;
   justify-content: center;
   flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  align-items: center;
+  width: 100%;
 }
 
 .details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
+  flex: 1 1 400px;
+  min-width: 320px;
+  height: auto; /* ✅ dynamically grows */
+  padding: 2rem;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  background: white;
+  border: rgb(163, 163, 163) 0.1rem solid;
   text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.details-container:hover {
+  transform: translateY(-5px);
 }
 
 .section-container {
   gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  height: auto; /* ✅ changed from 80% */
 }
 
 /* EXPERIENCE SECTION */
