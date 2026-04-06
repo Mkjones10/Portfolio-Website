@@ -173,87 +173,202 @@
   <!-- Projects -->
   <section id="projects">
 
-    <p class="section__text__p1">Browse My Recent</p>
+    <p class="section__text__p1">Browse My</p>
     <h1 class="title">Projects</h1>
 
+    <!-- Featured Cybersecurity Projects -->
     <div class="experience-details-container">
+      <h2 class="experience-sub-title" style="text-align: center; margin-bottom: 2rem;">
+        Featured Cybersecurity Projects
+      </h2>
+
       <div class="about-containers">
 
         <!-- Project 1 -->
         <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Network Traffic Risk Assessment Using Simulated Attacks</h2>
-          <p><em>West Virginia University — CYBR 530</em></p>
-          <p>
-            Built Python system simulating SYN flood and ICMP sweep attacks,
-            logging 3,000+ packets into SQLite while applying NIST-based risk scoring.
-          </p>
-          <button class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Mkjones10/Network-Traffic-Risk-Assessment-Using-Simulated-Attacks'">
-            View on GitHub
-          </button>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Quantitative Risk Assessment</h2>
-          <p><em>West Virginia University — CYBR 525</em></p>
-          <p>
-            Conducted risk analysis using SLE, ARO, and ALE metrics
-            aligned with NIST SP 800-30.
-          </p>
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('./assets/Quantitative-Risk-Assessment.docx')">
-            Download DOCX
-          </button>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">IT Audit Planning Project</h2>
-          <p><em>West Virginia University — CYBR 510</em></p>
-          <p>
-            Developed IT vulnerability management audit plan integrating
-            NIST CSF 2.0 and NIST SP 800-171 controls.
-          </p>
-          <button class="btn btn-color-2 project-btn"
-            onclick="window.open('./assets/IT-Audit-Planning.docx')">
-            Download DOCX
-          </button>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="details-container color-container">
           <h2 class="experience-sub-title project-title">Layered Network Security Monitoring & Fusion Detection Framework</h2>
-          <p><em>Suricata IDS + Cowrie Honeypot + Splunk SIEM</em></p>
+          <p><em>Suricata IDS | Cowrie Honeypot | Splunk SIEM</em></p>
           <p>
-            Implemented a layered intrusion detection and deception monitoring architecture using
-            Suricata Network IDS, Cowrie SSH/Telnet honeypot, and Splunk Enterprise SIEM. The system
-            aggregates network-level intrusion alerts and host-level attacker interaction telemetry to
-            detect exploit attempts, brute-force authentication activity, malware downloads, and
-            persistence techniques. Built correlation dashboards and incident response playbooks to
-            analyze multi-stage attack progression across the cyber kill chain.
+            Built a layered detection and deception architecture that combined Suricata network alerts,
+            Cowrie honeypot telemetry, and Splunk correlation dashboards to investigate exploit attempts,
+            brute-force logins, malware retrieval, and persistence activity across the attack lifecycle.
           </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Metrics:</strong> 307,708 total observed attack events | 30,649 high-severity exploit attempts | 18 confirmed multi-stage kill chains | 109 persistence attempts | 60 unique malware payloads</p>
+            <p><strong>Tools:</strong> Splunk, Suricata, Cowrie, MITRE ATT&CK</p>
+            <p><strong>Focus:</strong> Detection engineering, alert correlation, incident response, attack progression analysis</p>
+            <p><strong>Deliverables:</strong> Correlation dashboards, executive-level security metrics, incident response playbooks</p>
+          </div>
+
           <button class="btn btn-color-2 project-btn"
             onclick="location.href='https://github.com/Mkjones10/Layered-Honeypot-IDS-SOC-Project'">
             View on GitHub
           </button>
         </div>
 
-        <!-- Project 5 -->
+        <!-- Project 2 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Azure AD Incident Response & Zero Trust Lab</h2>
+          <p><em>Microsoft Entra ID | Conditional Access | Identity Security</em></p>
+          <p>
+            Built a cloud identity security lab to simulate suspicious sign-in and account compromise scenarios
+            using Microsoft Entra ID. Designed and tested Zero Trust controls to strengthen identity protection
+            and reduce unauthorized access risk.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Metrics:</strong> 5 Conditional Access policies implemented | MFA enforcement tested | legacy authentication blocked | location- and device-based access restrictions validated</p>
+            <p><strong>Tools:</strong> Microsoft Entra ID, Conditional Access, MFA, Salesforce SSO, Intune concepts</p>
+            <p><strong>Focus:</strong> Identity security, Zero Trust policy enforcement, suspicious sign-in investigation</p>
+            <p><strong>Deliverables:</strong> Incident response report, policy testing results, remediation recommendations</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/azure-ad-incident-response-report'">
+            View on GitHub
+          </button>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Endpoint Incident Response & Lateral Movement Analysis</h2>
+          <p><em>Windows Forensics | Procmon | Endpoint Investigation</em></p>
+          <p>
+            Performed an endpoint incident response investigation using Procmon to analyze process, file,
+            and registry activity associated with a suspected compromise. Traced multi-stage infection behavior
+            and lateral movement indicators to support containment and remediation planning.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Evidence:</strong> Multi-stage infection behavior identified | suspicious process execution analyzed | abnormal file creation patterns reviewed | registry activity investigated for persistence indicators</p>
+            <p><strong>Tools:</strong> Procmon, Windows endpoint telemetry, forensic analysis workflow</p>
+            <p><strong>Focus:</strong> Endpoint triage, malware behavior analysis, lateral movement investigation</p>
+            <p><strong>Deliverables:</strong> Incident response report, findings summary, prioritized remediation actions</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/endpoint-incident-response-lateral-movement-analysis'">
+            View on GitHub
+          </button>
+        </div>
+
+        <!-- Project 4 -->
         <div class="details-container color-container">
           <h2 class="experience-sub-title project-title">TPOT-CIC Fusion Intrusion Detection System</h2>
-          <p><em>Machine Learning IDS using CIC-IDS Dataset and Honeypot Telemetry</em></p>
+          <p><em>Machine Learning IDS | T-Pot Honeypot | CIC-IDS Dataset</em></p>
           <p>
-            Developed a hybrid intrusion detection system that fuses honeypot telemetry from the T-Pot
-            platform with machine learning models trained on the CIC-IDS dataset. Used TPOT AutoML to
-            automatically generate optimized detection pipelines capable of identifying malicious network
-            behavior such as brute-force attacks, exploits, and malware activity. The system integrates
-            network security monitoring with machine learning-driven classification to improve detection
-            accuracy and support SOC threat analysis.
+            Developed a hybrid intrusion detection system that fused honeypot telemetry from T-Pot with
+            machine learning pipelines trained on CIC-IDS data. Used automated model generation to improve
+            malicious traffic classification and support SOC-oriented threat analysis.
           </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Evidence:</strong> Combined live honeypot telemetry with benchmark intrusion dataset | automated optimized ML pipelines for attack classification | designed to improve visibility into malicious traffic patterns</p>
+            <p><strong>Tools:</strong> Python, TPOT AutoML, T-Pot, CIC-IDS, Splunk</p>
+            <p><strong>Focus:</strong> ML-based intrusion detection, network threat classification, security analytics</p>
+            <p><strong>Deliverables:</strong> Detection pipeline, project report, security visualization support</p>
+          </div>
+
           <button class="btn btn-color-2 project-btn"
             onclick="location.href='https://github.com/Mkjones10/tpot-cic-fusion-ids'">
             View on GitHub
+          </button>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Enterprise GRC Program & Risk Management Framework</h2>
+          <p><em>NIST | ISO 27001 | PCI DSS | COBIT</em></p>
+          <p>
+            Designed an enterprise governance, risk, and compliance program for a simulated fintech environment,
+            aligning business risk management with security controls, recovery planning, and regulatory expectations.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Metrics:</strong> 18-month GRC roadmap developed | quantitative risk register created using SLE, ARO, and ALE | multi-framework mappings across NIST CSF, ISO 27001, PCI DSS, GLBA, FFIEC, and COBIT</p>
+            <p><strong>Tools:</strong> NIST CSF, NIST SP 800-30, NIST SP 800-34, ISO 27001, COBIT 2019</p>
+            <p><strong>Focus:</strong> Risk assessment, compliance mapping, business continuity, security governance</p>
+            <p><strong>Deliverables:</strong> Risk register, DR/BCP plans, governance model, control mapping, implementation roadmap</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/securitygroup101-enterprise-grc-program'">
+            View on GitHub
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Academic Projects -->
+    <div class="experience-details-container" style="margin-top: 4rem;">
+      <h2 class="experience-sub-title" style="text-align: center; margin-bottom: 2rem;">
+        Academic Projects
+      </h2>
+
+      <div class="about-containers">
+
+        <!-- Academic Project 1 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Network Traffic Risk Assessment Using Simulated Attacks</h2>
+          <p><em>West Virginia University — CYBR 530</em></p>
+          <p>
+            Built a Python-based network monitoring system to simulate SYN flood and ICMP sweep attacks,
+            log packet activity into SQLite, and apply NIST-based risk scoring to detected network threats.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Metrics:</strong> Logged 3,000+ packets into SQLite during attack simulation</p>
+            <p><strong>Tools:</strong> Python, SQLite, packet analysis, NIST-based risk scoring</p>
+            <p><strong>Focus:</strong> Network monitoring, threat simulation, risk assessment</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/Network-Traffic-Risk-Assessment-Using-Simulated-Attacks'">
+            View on GitHub
+          </button>
+        </div>
+
+        <!-- Academic Project 2 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Quantitative Risk Assessment</h2>
+          <p><em>West Virginia University — CYBR 525</em></p>
+          <p>
+            Conducted a quantitative risk analysis using SLE, ARO, and ALE calculations to assess
+            business impact and support risk-based decision-making aligned with NIST SP 800-30.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Tools:</strong> Risk quantification methodology, NIST SP 800-30</p>
+            <p><strong>Focus:</strong> Quantitative risk analysis, business impact evaluation</p>
+            <p><strong>Deliverables:</strong> Risk calculations, analysis document, recommendations</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/Quantitative-Risk-Assessment.docx')">
+            Download DOCX
+          </button>
+        </div>
+
+        <!-- Academic Project 3 -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">IT Audit Planning Project</h2>
+          <p><em>West Virginia University — CYBR 510</em></p>
+          <p>
+            Developed an IT audit planning document focused on vulnerability management and control review,
+            incorporating NIST CSF 2.0 and NIST SP 800-171 concepts to support structured audit preparation.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Tools:</strong> NIST CSF 2.0, NIST SP 800-171</p>
+            <p><strong>Focus:</strong> Audit planning, control assessment, vulnerability management review</p>
+            <p><strong>Deliverables:</strong> Audit plan, scope definition, control mapping</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('./assets/IT-Audit-Planning.docx')">
+            Download DOCX
           </button>
         </div>
 

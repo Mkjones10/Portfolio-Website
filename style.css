@@ -374,7 +374,18 @@ article .icon {
   color: black;
   border-color: rgb(163, 163, 163);
 }
+.project-highlights {
+  margin-top: 1rem;
+  text-align: left;
+  border-top: 1px solid #dcdcdc;
+  padding-top: 1rem;
+}
 
+.project-highlights p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 /* CONTACT */
 
 #contact {
