@@ -339,11 +339,18 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+#experience .about-containers {
+  align-items: stretch;
 }
 
+article div {
+  text-align: left;
+}
 article .icon {
   cursor: default;
 }
