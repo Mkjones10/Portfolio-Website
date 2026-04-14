@@ -49,6 +49,17 @@
       <p class="section__text__p1">Hello, I'm</p>
       <h1 class="title">Maxine Jones</h1>
       <p class="section__text__p2">Cybersecurity Analyst</p>
+
+      <!-- ADDED: Achievement badges -->
+      <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin: 0.75rem 0;">
+        <span style="background: #1a1a2e; color: #00d4ff; border: 1px solid #00d4ff; border-radius: 20px; padding: 0.3rem 0.85rem; font-size: 0.78rem; font-weight: 600; white-space: nowrap;">
+          🏆 NCL — #1 Midwest Regional (out of 26)
+        </span>
+        <span style="background: #1a1a2e; color: #00d4ff; border: 1px solid #00d4ff; border-radius: 20px; padding: 0.3rem 0.85rem; font-size: 0.78rem; font-weight: 600; white-space: nowrap;">
+          🥉 Google Black CS Summit Hackathon — 3rd Place
+        </span>
+      </div>
+
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/resume.docx.pdf')">
           View My Resume
@@ -137,6 +148,21 @@
             </div>
           </article>
 
+          <!-- ADDED: Girls Inc. -->
+          <article>
+            <img src="./assets/checkmark.png" class="icon" />
+            <div>
+              <h3>Program Intern – Student Facilitator — Girls Inc. Chicago</h3>
+              <p><em>June 2025 – August 2025</em></p>
+              <ul>
+                <li>Delivered STEM-focused programming for groups of 10–25 students, facilitating interactive lessons on technology, wellness, and leadership.</li>
+                <li>Planned and facilitated sessions while applying classroom management and student engagement strategies.</li>
+                <li>Tracked attendance, evaluations, and program data to support reporting and outcomes.</li>
+                <li>Applied stakeholder communication skills developed here to translate technical security findings into executive-level language in professional cybersecurity deliverables.</li>
+              </ul>
+            </div>
+          </article>
+
           <article>
             <img src="./assets/checkmark.png" class="icon" />
             <div>
@@ -145,6 +171,20 @@
               <ul>
                 <li>Organized cybersecurity hackathon for 50+ high school students.</li>
                 <li>Coordinated logistics, faculty collaboration, and event materials.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- ADDED: Lawrence Hall -->
+          <article>
+            <img src="./assets/checkmark.png" class="icon" />
+            <div>
+              <h3>Team Lead — Lawrence Hall Chicago Youth Service Corps</h3>
+              <p><em>July 2022 – September 2024</em></p>
+              <ul>
+                <li>Led a team of 10 to identify and address community issues including substance abuse and gun violence.</li>
+                <li>Designed community outreach projects including a podcast and awareness website.</li>
+                <li>Presented a capstone project on identified issues to an audience of 100+ people.</li>
               </ul>
             </div>
           </article>
@@ -185,30 +225,7 @@
 
       <div class="about-containers">
 
-        <!-- Project 1 -->
-        <div class="details-container color-container">
-          <h2 class="experience-sub-title project-title">Layered Network Security Monitoring & Fusion Detection Framework</h2>
-          <p><em>Suricata IDS | Cowrie Honeypot | Splunk SIEM</em></p>
-          <p>
-            Built a layered detection and deception architecture that combined Suricata network alerts,
-            Cowrie honeypot telemetry, and Splunk correlation dashboards to investigate exploit attempts,
-            brute-force logins, malware retrieval, and persistence activity across the attack lifecycle.
-          </p>
-
-          <div class="project-highlights">
-            <p><strong>Key Metrics:</strong> 307,708 total observed attack events | 30,649 high-severity exploit attempts | 18 confirmed multi-stage kill chains | 109 persistence attempts | 60 unique malware payloads</p>
-            <p><strong>Tools:</strong> Splunk, Suricata, Cowrie, MITRE ATT&CK</p>
-            <p><strong>Focus:</strong> Detection engineering, alert correlation, incident response, attack progression analysis</p>
-            <p><strong>Deliverables:</strong> Correlation dashboards, executive-level security metrics, incident response playbooks</p>
-          </div>
-
-          <button class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/Mkjones10/Layered-Honeypot-IDS-SOC-Project'">
-            View on GitHub
-          </button>
-        </div>
-
-        <!-- Project 2 -->
+        <!-- MOVED TO #1: Azure AD -->
         <div class="details-container color-container">
           <h2 class="experience-sub-title project-title">Azure AD Incident Response & Zero Trust Lab</h2>
           <p><em>Microsoft Entra ID | Conditional Access | Identity Security</em></p>
@@ -227,6 +244,29 @@
 
           <button class="btn btn-color-2 project-btn"
             onclick="location.href='https://github.com/Mkjones10/azure-ad-incident-response-report'">
+            View on GitHub
+          </button>
+        </div>
+
+        <!-- MOVED TO #2: Layered SOC -->
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Layered Network Security Monitoring & Fusion Detection Framework</h2>
+          <p><em>Suricata IDS | Cowrie Honeypot | Splunk SIEM</em></p>
+          <p>
+            Built a layered detection and deception architecture that combined Suricata network alerts,
+            Cowrie honeypot telemetry, and Splunk correlation dashboards to investigate exploit attempts,
+            brute-force logins, malware retrieval, and persistence activity across the attack lifecycle.
+          </p>
+
+          <div class="project-highlights">
+            <p><strong>Key Metrics:</strong> 307,708 total observed attack events | 30,649 high-severity exploit attempts | 18 confirmed multi-stage kill chains | 109 persistence attempts | 60 unique malware payloads</p>
+            <p><strong>Tools:</strong> Splunk, Suricata, Cowrie, MITRE ATT&CK</p>
+            <p><strong>Focus:</strong> Detection engineering, alert correlation, incident response, attack progression analysis</p>
+            <p><strong>Deliverables:</strong> Correlation dashboards, executive-level security metrics, incident response playbooks</p>
+          </div>
+
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/Layered-Honeypot-IDS-SOC-Project'">
             View on GitHub
           </button>
         </div>
@@ -370,6 +410,58 @@
           <button class="btn btn-color-2 project-btn"
             onclick="window.open('./assets/IT-Audit-Planning.docx')">
             Download DOCX
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ADDED: Security Reports & Deliverables -->
+    <div class="experience-details-container" style="margin-top: 4rem;">
+      <h2 class="experience-sub-title" style="text-align: center; margin-bottom: 2rem;">
+        Security Reports & Deliverables
+      </h2>
+      <p style="text-align: center; margin-bottom: 2rem; color: var(--secondary-color, #555);">
+        Professional-grade incident reports and security documentation produced as part of hands-on investigations.
+      </p>
+
+      <div class="about-containers">
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">Security Incident Report — Azure AD Credential Compromise</h2>
+          <p><em>Incident ID: INC-2026-0322-001 | Severity: HIGH | Status: Contained</em></p>
+          <p>
+            Formal incident report documenting a vishing-based credential compromise of a Microsoft 365 account.
+            Covers full attack narrative, Entra ID sign-in log analysis, MITRE ATT&CK mapping, Zero Trust
+            remediation actions, IOCs, and executive business impact assessment.
+          </p>
+          <div class="project-highlights">
+            <p><strong>Scope:</strong> Cloud identity compromise, unauthorized group creation, privilege escalation attempt</p>
+            <p><strong>Frameworks:</strong> MITRE ATT&CK (T1566.004, T1078, T1098, T1069), Zero Trust, NIST CSF</p>
+            <p><strong>Deliverable:</strong> Executive-level incident report with full log evidence, IOCs, and remediation steps</p>
+          </div>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/azure-ad-incident-response-report'">
+            View on GitHub
+          </button>
+        </div>
+
+        <div class="details-container color-container">
+          <h2 class="experience-sub-title project-title">MDR Executive Report — Endpoint Malware & Lateral Movement</h2>
+          <p><em>Client: Lumen Soda, Inc. | Prepared for: CEO | Role: Junior MDR Analyst</em></p>
+          <p>
+            Executive-level MDR report delivered to a CEO summarizing a multi-stage malware infection,
+            lateral movement to a remote host, and ransomware-style file creation. Translates forensic
+            Procmon findings into clear business impact, root cause, and actionable remediation steps.
+          </p>
+          <div class="project-highlights">
+            <p><strong>Scope:</strong> Dropper execution, second-stage payload, lateral movement to ADMIN-21139, remote file impact</p>
+            <p><strong>Tools:</strong> Sysinternals Procmon, Windows endpoint forensics</p>
+            <p><strong>Deliverable:</strong> Non-technical executive summary with prioritized remediation recommendations</p>
+          </div>
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Mkjones10/endpoint-incident-response-lateral-movement-analysis'">
+            View on GitHub
           </button>
         </div>
 
